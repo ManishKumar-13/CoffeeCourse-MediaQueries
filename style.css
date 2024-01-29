@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    width: 65%;
+}
+
+.u-section-1,
+.top {
+    width: 100%;
+    /* border: 1px solid red; */
+    background-color: rgb(240, 197, 11);
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.top {
+    background-color: white;
+    padding: 4rem;
+}
+
+.u-section-1 .left .u-image-1 {
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+    margin-top: -33%;
+}
+
+.left {
+    width: 50%;
+    margin-left: 3rem;
+}
+
+.right {
+    width: 50%;
+}
+
+.right .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-inline: auto;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.u-text {
+    font-weight: 600;
+    font-size: smaller;
+    padding-block: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    border: 1px solid black;
+    width: fit-content;
+    background-color: black;
+    color: white;
+    font-size: smaller;
+    padding: 0.5rem 1.5rem;
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    main {
+        width: 80%;
+    }
+}
+
+@media (max-width: 980px) {
+
+    .u-section-1,
+    .top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        margin: 0;
+    }
+
+    .u-section-1 .left .u-image-1 {
+        margin-top: 0;
+    }
+
+    .top {
+        display: none;
+        /* Hide top section for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+
+    .u-section-1,
+    .top {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .u-text {
+        font-size: small;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        width: 90%;
+    }
+
+    .u-section-1 .left .u-image-1 {
+        max-height: 300px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .u-text {
+        font-size: x-small;
+    }
+
+    .button {
+        padding: 0.3rem 1rem;
+    }
+}
